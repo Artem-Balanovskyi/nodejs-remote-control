@@ -2,10 +2,10 @@
     "name": "nodejs-remote-control",
     "version": "1.0.0",
     "description": "RS School Task 4 - Remote Control",
-    "main": "index.ts",
+    "main": "./src/index.ts",
     "scripts": {
-        "start": "node ./index.ts",
-        "start:dev": "nodemon ./index.ts",
+        "start": "node ./src/index.ts",
+        "start:dev": "nodemon ./src/index.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Artem Balanovskyi",
@@ -19,6 +19,7 @@
     },
     "devDependencies": {
         "@types/node": "^18.11.18",
+        "@types/ws": "^8.5.4",
         "@typescript-eslint/eslint-plugin": "^5.48.2",
         "@typescript-eslint/parser": "^5.48.2",
         "eslint": "^8.32.0",
