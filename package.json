@@ -4,9 +4,8 @@
     "description": "RS School Task 4 - Remote Control",
     "main": "./src/index.ts",
     "scripts": {
-        "start": "node ./src/index.ts",
-        "start:dev": "nodemon ./src/index.ts",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "tsc && node ./dist/index.js",
+        "start:dev": "nodemon ./src/index.ts"
     },
     "author": "Artem Balanovskyi",
     "keywords": [],
