@@ -45,12 +45,13 @@ wss.on('connection', (ws, req) => {
 
     process.on('SIGINT', () => {
         makeMsgColoured(34, 'Closing websocket server...');
+        let idx = 0;
         wss.clients.forEach((socket) => {
             socket.close();
             const state = socket.readyState;
             if (state === 1 || state === 2) {
                 socket.terminate();
-                makeMsgColoured(34, `Connection closed`);
+                makeMsgColoured(34, `Connection No. ${idx += 1} closed`);
             }
         });
         wss.close();
